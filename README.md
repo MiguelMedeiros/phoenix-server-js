@@ -42,6 +42,7 @@ import Phoenix from "phoenix-server-js";
 const start = async () => {
   const phoenix = new Phoenix({
     token: "your_api_token_here",
+    host: "http://127.0.0.1:9740",
   });
 
   // Node Management examples
