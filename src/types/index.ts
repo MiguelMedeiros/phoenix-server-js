@@ -4,12 +4,12 @@ export interface PhoenixConfig {
 }
 
 export interface Channel {
-  // state: string;
-  // channelId: string;
-  // balanceSat: number;
-  // inboundLiquiditySat: number;
-  // capacitySat: number;
-  // fundingTxId: string;
+  state: string;
+  channelId: string;
+  balanceSat: number;
+  inboundLiquiditySat: number;
+  capacitySat: number;
+  fundingTxId: string;
 }
 
 export interface NodeInfo {
