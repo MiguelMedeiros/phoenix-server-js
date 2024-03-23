@@ -1,0 +1,37 @@
+{
+  "name": "phoenix-server-js",
+  "version": "1.0.0",
+  "description": "A package to easily use Phoenix Server with JavaScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "examples": "ts-node examples/index.ts"
+  },
+  "keywords": [
+    "Phoenix Wallet",
+    "Lightning Network",
+    "Bitcoin",
+    "Wallet"
+  ],
+  "author": "Miguel Medeiros",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.30",
+    "@types/qs": "^6.9.14",
+    "@types/ws": "^8.5.10",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "ws": "^8.16.0"
+  }
+}
