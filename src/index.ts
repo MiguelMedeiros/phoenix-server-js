@@ -19,15 +19,17 @@ class Phoenix {
   private _host;
 
   constructor({ token, host = "http://127.0.0.1:9740" }: PhoenixConfig) {
-    const tokenBase64 = Buffer.from(`:${token}`).toString("base64");
-    this._token = tokenBase64;
+    this._token = token;
     this._host = host;
 
     this._http = axios.create({
       baseURL: host,
       headers: {
-        Authorization: `Basic ${tokenBase64}`,
         "Content-Type": "application/x-www-form-urlencoded",
+      },
+      auth: {
+        username: "phoenix",
+        password: token,
       },
     });
   }
@@ -141,10 +143,11 @@ class Phoenix {
   websocket(): WebSocket {
     // remove http:// or https:// from this._host
     const wsHost = this._host.replace(/(^\w+:|^)\/\//, "");
+    const tokenBase64 = Buffer.from(`:${this._token}`).toString("base64");
 
     const ws = new WebSocket(`ws://${wsHost}/websocket`, {
       headers: {
-        Authorization: `Basic ${this._token}`,
+        Authorization: `Basic ${tokenBase64}`,
       },
     });
 
