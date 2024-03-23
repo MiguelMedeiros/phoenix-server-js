@@ -38,14 +38,13 @@ const start = async () => {
 
   const lnInvoice = await phoenix.sendLightningInvoice({
     amountSat: 1,
-    invoice:
-      "lnbc10n1pjluy52pp5t9qcmduac696laqkcqe2fjzl7dtnf89lmsfwtj90fhzujara9sqqdqgw3jhxar9cqzzsxqyz5vqsp5nacazz94e3l6qvcru2mggajzntry6mflwqz90hyj2c7hld202ggq9qyyssqgnxf4tvgd2yessfq5a9n8ndfyrs8ymutwzur26x9dcd8sznrx70hm9s6dg23h0cln9pzkehtrxkrswmewwj3jn8plksr9udpth5p9ncqmfzsmn",
+    invoice: "bolt11_invoice_goes_here",
   });
   console.log(lnInvoice);
 
   const txId = await phoenix.sendOnchainPayment({
     amountSat: 100000,
-    address: "tb1qwnp38xc5qh35ch9l5p6a3r7kwupj9rw5a4jn3y",
+    address: "bitcoin_address_goes_here",
     feerateSatByte: 12,
   });
 
