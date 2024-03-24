@@ -1,5 +1,7 @@
 [![npm version](https://img.shields.io/npm/v/phoenix-server-js.svg?style=flat-square)](https://www.npmjs.com/package/phoenix-server-js)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](./LICENSE)
+[![downloads](https://img.shields.io/npm/dw/phoenix-server-js?style=flat-square)](https://www.npmjs.com/package/phoenix-server-js)
+[![follow me](https://img.shields.io/badge/follow_me-on_Github-black?style=flat-square)](https://github.com/miguelmedeiros)
 
 # Phoenix-Server-JS
 

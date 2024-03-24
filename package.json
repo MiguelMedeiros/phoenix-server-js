@@ -2,6 +2,10 @@
   "name": "phoenix-server-js",
   "version": "1.0.1",
   "description": "A package to easily use Phoenix Server with JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MiguelMedeiros/phoenix-server-js.git"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
