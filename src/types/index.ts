@@ -1,6 +1,7 @@
 export interface PhoenixConfig {
   token: string;
   host?: string;
+  username?: string;
 }
 
 export interface Channel {
