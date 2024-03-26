@@ -19,7 +19,7 @@ class Phoenix {
   private _token;
   private _host;
 
-  constructor({ username, token, host }: PhoenixConfig) {
+  constructor({ token, host ="http://127.0.0.1:9740", username = "phoenix" }: PhoenixConfig) {
     this._username = username;
     this._token = token;
     this._host = host;
