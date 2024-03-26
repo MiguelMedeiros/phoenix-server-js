@@ -2,9 +2,9 @@ import Phoenix from "../src/index";
 
 const start = async () => {
   const phoenix = new Phoenix({
-    username: "phoenix",
+    username: "phoenix", // optional
     token: "your_token_goes_here",
-    host: "http://127.0.0.1:9740",
+    host: "http://127.0.0.1:9740", // optional
   });
 
   // Node Management examples
