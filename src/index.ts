@@ -10,7 +10,7 @@ import {
   PayInvoiceResponse,
   PaymentInfo,
   PaymentInfoOutgoing,
-  PhoenixConfig
+  PhoenixConfig,
 } from "./types";
 
 class Phoenix {
