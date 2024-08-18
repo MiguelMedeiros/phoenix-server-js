@@ -31,7 +31,7 @@ class Phoenix {
       },
       auth: {
         username: this._username,
-        password: this._host,
+        password: this._token
       },
     });
   }
